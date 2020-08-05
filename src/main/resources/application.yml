@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  main:
+    allow-bean-definition-overriding: true
+
+venesa:
+  rabbitmq:
+    exchange: exchange
+    queue: queue_common
+    routingkey: key_common
+
+server:
+  port: 8888
